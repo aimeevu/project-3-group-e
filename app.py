@@ -7,8 +7,8 @@ import json
 import pandas as pd
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 database = "crimestats"
-
 app.config["MONGO_URI"] = f"mongodb://localhost:27017/{database}"
 mongo = PyMongo(app)
 
