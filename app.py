@@ -1,9 +1,7 @@
 from flask import Flask, render_template, jsonify
 from flask_pymongo import PyMongo
 from bson.json_util import dumps
-# from sqlalchemy.ext.automap import automap_base
-# from sqlalchemy.orm import Session
-# from sqlalchemy import create_engine, func
+
 import json
 import pandas as pd
 
@@ -12,12 +10,6 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 database = "gun_violenceDB"
 app.config["MONGO_URI"] = f"mongodb://localhost:27017/{database}"
 mongo = PyMongo(app)
-
-# Could not get sqlalchemy to connect to mongodb.
-# engine = create_engine(f"mongodb://localhost:27017/{database}")
-# Base = automap_base()
-# Base.prepare(engine,reflect=True)
-# statePartyAffiliations = Base.classes.statePartyAffiliations
 
 @app.route("/")
 def index():
