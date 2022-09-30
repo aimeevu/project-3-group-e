@@ -1,10 +1,10 @@
-#   <h2>  Project 3 | Group E </h2>
+<h2> #  Project 3 | Group E </h2>
 <h1>Gun Violence in America</h1>
 
 
 <p>
 <h3> Description:</h3>  
-We all know that gun violence in the US is prevalent, but is gun violence getting worse over the years? For our project, we will use an interactive  <br> dashboard to show viewers the impact that guns have had over the years across the US. How has the pandemic impacted gun violence? Has gun violence <br>  increased in a certain state, and does being a red state or a blue state affect their safety from the dangers of guns? Our goal is to create a visual <br> presentation of the data that we find to answer these questions. 
+We all know that gun violence in the US is prevalent, but is gun violence getting worse over the years? For our project, we will use an interactive  dashboard to show viewers the impact that guns have had over the years across the US. How has the pandemic impacted gun violence? Has gun violence increased in a certain state, and does being a red state or a blue state affect their safety from the dangers of guns? Our goal is to create a visual presentation of the data that we find to answer these questions. 
 <p>
 <h3> Group Members:</h3> <br>
 Selina<br>
