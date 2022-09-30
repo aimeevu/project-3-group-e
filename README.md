@@ -3,10 +3,10 @@
 
 
 <p>
-Description:
+<h3> Description:</h3>  
 We all know that gun violence in the US is prevalent, but is gun violence getting worse over the years? For our project, we will use an interactive  <br> dashboard to show viewers the impact that guns have had over the years across the US. How has the pandemic impacted gun violence? Has gun violence <br>  increased in a certain state, and does being a red state or a blue state affect their safety from the dangers of guns? Our goal is to create a visual <br> presentation of the data that we find to answer these questions. 
 <p>
-Group Members:<br>
+<h3> Group Members:</h3> <br>
 Selina<br>
 Mike Ariwodo<br>
 William M<br>
@@ -21,18 +21,18 @@ Preston H<br>
 <p>
   <br>
   
-Datasets:
-<br> https://www.gunviolencearchive.org/mass-shooting  <br>
-<br> https://www.safehome.org/data/firearms-guns-statistics/#police  <br>
+<h3>Datasets:</h3>  <br> 
+https://www.gunviolencearchive.org/mass-shooting  <br>
+ https://www.safehome.org/data/firearms-guns-statistics/#police  <br>
 https://www.gunviolencearchive.org/accidental-injuries <br>
 https://www.gunviolencearchive.org/accidental-deaths <br>
 https://worldpopulationreview.com/state-rankings/gun-ownership-by-state  <br>
 https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
 <p>
-Database: MongoDB  <br>
+<h3> Database: MongoDB  </h3> <br>
 
 <p>
-Tasks: <br>
+<h3> Tasks:  </h3><br>
 Set up database - Vertta/Selina   <br>
 Clean data - James Dellinger    <br>
 Flask API - Aimee    <br>
@@ -64,5 +64,5 @@ PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip   <br>
  
 <p>
 
-Sketch:   <br>
+<h3>Sketch: </h3>  <br>
 
