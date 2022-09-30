@@ -17,7 +17,7 @@ Valentina Z
 James D
 Gina S
 Preston H
-
+<p>
 Datasets:
 https://www.gunviolencearchive.org/mass-shooting
 https://www.safehome.org/data/firearms-guns-statistics/#police
@@ -25,10 +25,10 @@ https://www.gunviolencearchive.org/accidental-injuries
 https://www.gunviolencearchive.org/accidental-deaths
 https://worldpopulationreview.com/state-rankings/gun-ownership-by-state
 https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states
-
+<p>
 Database: MongoDB
 GitHub Link: https://github.com/aimeevu/project-3-group-e
-
+<p>
 Tasks:
 Set up database - Vertta/Selina
 Clean data - James Dellinger
@@ -59,7 +59,7 @@ Time
 Count of Data Categories
 PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip
 README - Michael
-
+<p>
 
 Sketch:
 
