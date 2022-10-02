@@ -33,34 +33,35 @@ https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
 
 <p>
 <h3> Tasks:  </h3><br>
--Set up database - Vertta/Selina   <br>
--Clean data - James Dellinger    <br>
--Flask API - Aimee    <br>
--HTML/CSS frame of website - Gina/Aimee   <br>
--Interactions   <br>
--Interactive - Valentina/Michael   <br>
--Heatmap toggle button   <br>
--State Statistics Display   <br>
--Types of gun violence (Data categories) - displayed on map   <br>
--Mass Shooting   <br>
--Officer Involved Shootings  <br>
--Accidental Injuries   <br>
--Accidental Deaths    <br>
--Drop Down Categories - William/Jarvis    <br>
--How has the pandemic affected gun violence   <br>
--Time   <br>
--Count of Data Categories    <br>
--Rate of death vs year   <br>
--Number of Deaths    <br>
--Year    <br>
--Rate of injury vs year   <br>
--Number of Injury   <br>
--Year   <br>
--Red vs Blue - Political view //need list of states and party affiliation  <br>
--State Party  <br>
--Time  <br>
--Count of Data Categories  <br>
--PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip   <br>
+
+* Set up database - Vertta/Selina
+* Clean data - James Dellinger
+* Flask API - Aimee
+* HTML/CSS frame of website - Gina/Aimee
+* Interactions
+  - Interactive - Valentina/Michael
+  - Heatmap toggle button
+  - State Statistics Display
+* Drop Down Categories - William/Jarvis
+  - How has the pandemic affected gun violence
+    - Time
+    - Count of Data Categories
+  - Rate of death vs year
+    - Number of Deaths
+    - Year
+  - Rate of injury vs year
+    - Number of Injury
+    - Year
+  - Red vs Blue - Political view //need list of states and party affiliation
+    - State Party
+    - Time
+    - Count of Data Categories
+* Types of gun violence (Data categories) - displayed on map
+  - Mass Shooting
+  - Officer Involved Shootings
+  - Accidental Injuries
+  - Accidental Deaths
+* PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip
  
 <p>
 
