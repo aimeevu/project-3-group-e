@@ -1,4 +1,4 @@
-const MASS_SHOOTING_URL = "/gun_violenceDB/massShootings_byear";
+const MASS_SHOOTING_URL = "/gun_violenceDB/massShootings";
 const POLICE_SHOOTING_URL = "/gun_violenceDB/fatalPoliceShootings";
 const ACCIDENTAL_DEATH_URL = "/gun_violenceDB/accidentalDeath";
 
@@ -14,7 +14,7 @@ function fetchMassShooting() {
             console.log(massShootingData);
         });
 }
-function fetchPoliceShooting() {
+function fetchPoliceShootings() {
     fetch(POLICE_SHOOTING_URL)
         .then((response) => response.json())
         .then((data) => {

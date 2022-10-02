@@ -19,12 +19,11 @@ FIELDS1 = {'Year': True, 'Date': True, 'State': True, 'City_Or_County': True, 'K
 COLLECTION2 = 'fatalPoliceShootings'
 FIELDS2 = {'Year': True, 'Date': True, 'State': True, 'City': True, 'manner_of_death': True, '_id': False}
 
-COLLECTION3 = 'massShootings_byear'
+COLLECTION3 = 'massShootings'
 FIELDS3 = {'Year': True, 'State': True, 'Killed': True, 'Injured': True, '_id': False}
 
 COLLECTION4 = 'gunOwnership'
 FIELDS4 = {'State': True, 'gunOwnership': True, 'totalGuns': True, '_id': False}
-
 
 #add route to map the URLs to the data from MongoDB
 
@@ -44,8 +43,6 @@ def accidentalDeath():
     connection.close()
     return json_accidents
 
-
-
 @app.route("/gun_violenceDB/fatalPoliceShootings")
 def fatalPoliceShootings():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
@@ -58,7 +55,7 @@ def fatalPoliceShootings():
     connection.close()
     return json_fatalPoliceShootings
 
-@app.route("/gun_violenceDB/massShootings_byear")
+@app.route("/gun_violenceDB/massShootings")
 def massShootings():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION3]
