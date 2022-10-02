@@ -6,7 +6,7 @@ let massShootingData;
 let policeShootingData;
 let accidentalDeathData;
 
-function fetchMassShooting() {
+function fetchMassShootings() {
     fetch(MASS_SHOOTING_URL)
         .then((response) => response.json())
         .then((data) => {
