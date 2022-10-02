@@ -7,6 +7,7 @@ const gunOwnership_URL = "/gun_violenceDB/gunOwnership";
 let massShootingData;
 let policeShootingData;
 let accidentalDeathData;
+let gunOwnershipData
 
 function fetchMassShootings() {
     fetch(MASS_SHOOTING_URL)
@@ -38,8 +39,8 @@ function gunOwnership() {
     fetch(gunOwnership_URL)
         .then((response) => response.json())
         .then((data) => {
-            accidentalDeathData = data;
-            console.log(accidentalDeathData);
+            gunOwnershipData = data;
+            console.log(gunOwnershipData);
         });
 }
 
