@@ -1,6 +1,6 @@
-const MASS_SHOOTING_URL = "/api/v1.0/massshooting";
+const MASS_SHOOTING_URL = "/gun_violenceDB/massShootings_byear";
 const POLICE_SHOOTING_URL = "/gun_violenceDB/fatalPoliceShootings";
-const ACCIDENTAL_DEATH_URL = "/api/v1.0/accidentaldeath";
+const ACCIDENTAL_DEATH_URL = "/gun_violenceDB/accidentalDeath";
 
 let massShootingData;
 let policeShootingData;
