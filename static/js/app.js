@@ -1,6 +1,8 @@
 const MASS_SHOOTING_URL = "/gun_violenceDB/massShootings";
 const POLICE_SHOOTING_URL = "/gun_violenceDB/fatalPoliceShootings";
 const ACCIDENTAL_DEATH_URL = "/gun_violenceDB/accidentalDeath";
+const gunOwnership_URL = "/gun_violenceDB/gunOwnership";
+
 
 let massShootingData;
 let policeShootingData;
@@ -22,6 +24,7 @@ function fetchPoliceShootings() {
             console.log(policeShootingData);
         });
 }
+
 function fetchAccidentalDeath() {
     fetch(ACCIDENTAL_DEATH_URL)
         .then((response) => response.json())
@@ -30,3 +33,15 @@ function fetchAccidentalDeath() {
             console.log(accidentalDeathData);
         });
 }
+
+function gunOwnership() {
+    fetch(gunOwnership_URL)
+        .then((response) => response.json())
+        .then((data) => {
+            accidentalDeathData = data;
+            console.log(accidentalDeathData);
+        });
+}
+
+
+
