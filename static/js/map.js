@@ -74,11 +74,15 @@ var blueTeam = [];
   for (var i = 0; i < stations.length; i++)
   {
      var station = stations[i];
+     var obtained = station.gunOwnership;
+     var total = 1;
+     var percent = (obtained*100/total).toFixed(1)
+     console.log(percent)
 
       // For each station, create a marker, and bind a popup with the station's name.
       var totalMarker = L.marker([station.coordinate[0], station.coordinate[1]])
       .bindPopup(`<h2>State: ${station.State}</h2>
-        <hr><b>Ownership Percentage: </b>${station.gunOwnership}
+        <hr><b>Ownership Percentage: </b>${percent}
         <b>Total: </b>${station.totalGuns}`)
 
      var markerColor;
@@ -97,7 +101,7 @@ var blueTeam = [];
     })
     
     .bindPopup(`<h2>State: ${station.State}</h2>
-       <hr><b>Ownership Percentage: </b>${station.gunOwnership}
+       <hr><b>Ownership Percentage: </b>${percent}%
        <b>Total: </b>${station.totalGuns}`)
 
    
