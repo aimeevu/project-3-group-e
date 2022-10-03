@@ -296,7 +296,7 @@
         },
         {
             "State": "New Jersey",
-            "coordinate":[40.0583, 74.4057],
+            "coordinate":[40.0583, -74.4057],
             "gunOwnership": "0.1470",
             "totalGuns": "57505"
         }
