@@ -17,6 +17,7 @@ d3.json("./json_data/clean_massShooting.json").then((data) => {
         kill_array.push(data[key].Killed);
         injure_array.push(data[key].Injured);
     };
+    
 
     var trace_injured = {
         x: state_array,
