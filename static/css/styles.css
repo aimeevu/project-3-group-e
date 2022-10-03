@@ -13,33 +13,68 @@ body {
 
 }
 
+
+
 .container {
     margin-top: 3%;
     
 }
 
+
 .box {
     background-color: #EBF5DF; 
     min-height: 500px;
 }
+
+
+/*GUNS GUNS GUNS header*/
 h1 {
-    /* text-align: center; */
-    /* color:rgb(214, 176, 71); */
-    /* background-color: black; */
+    color:rgb(15, 15, 13);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 10px;
+    background: linear-gradient(to left, #ff9999 0%, #cc0000 100%);
+    padding-top: 0px; 
+    padding-bottom: 2px; 
+    text-align: left;
+    border-style: outset;
+    outline-color: rgb(248, 241, 241);
+    font-weight: bold;
+    
+} 
+
+
+/*Gun Violence Epidemic header*/
+.gunviolence {
+  
+  color: rgb(255, 228, 77);
+  text-align: left;
+  font-size: 45px;
+  font-family: "Courier New";
+  
 }
     
 h3 {
     text-align: center;
 }
 
-h4.landing {
-    text-align: center;
-    color: rgb(70, 19, 19);    
+/*Click an icon header*/
+h4 {
+  color: rgb(248, 243, 243);
 }
 
+/*Clickable Links before hover*/
+h4.landing {
+    text-align: center;
+    border-style: inset;
+    color: rgb(248, 243, 243);
+           
+}
+
+/*Clickable Links when hovering*/
 h4.landing:hover {
   
-    color: #ba872f;  
+    color: #ba872f;
+    
 }
 
 h5.landing {
@@ -63,7 +98,7 @@ IMG.panel {
     width: 200px;
     height: 200px;
     z-index: 2;
-    
+       
 
 }
 
@@ -95,17 +130,23 @@ p.copyright {
 }
 footer {
   display:flex;
-  background-color: black;
+  background-color: rgb(166, 166, 166);
+  color: rgb(0, 102, 204);
+  font-weight: bold;
+  text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50px;
   width: 100%;
+  border-style: outset;
+  outline-color: rgb(248, 241, 241);
   border-top: 1px solid white;
   justify-content:center;
      align-items:center;
 }
+
 
 html,
 body,
