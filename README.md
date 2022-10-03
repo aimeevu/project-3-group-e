@@ -68,3 +68,7 @@ https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
 
 <h3>Sketch: </h3>  <br>
 
+<h3>ETL Methodology Used: </h3>  <br>
+
+<h3>Flask Application Overview: </h3>  <br>
+
