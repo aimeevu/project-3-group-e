@@ -47,8 +47,6 @@ def accidentalDeath():
     connection.close()
     return json_accidents
 
-
-
 @app.route("/gun_violenceDB/fatalPoliceShootings")
 def fatalPoliceShootings():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
