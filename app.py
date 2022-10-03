@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 MONGODB_HOST = 'localhost'
 MONGODB_PORT = 27017
-DBS_NAME = 'gun_violenceDB'
+DBS_NAME = 'gun_violence'
 
 COLLECTION1 = 'accidentalDeath'
 FIELDS1 = {'Year': True, 'Date': True, 'State': True, 'City_Or_County': True, 'Killed': True, '_id': False}
@@ -20,14 +20,10 @@ COLLECTION2 = 'fatalPoliceShootings'
 FIELDS2 = {'Year': True, 'Date': True, 'State': True, 'City': True, 'manner_of_death': True, '_id': False}
 
 COLLECTION3 = 'massShootings'
-FIELDS3 = {'Year': True, 'Date': True, 'State': True, 'Killed': True, 'Injured': True, '_id': False}
+FIELDS3 = {'Year': True, 'State': True, 'Killed': True, 'Injured': True, '_id': False}
 
 COLLECTION4 = 'gunOwnership'
 FIELDS4 = {'State': True, 'gunOwnership': True, 'totalGuns': True, '_id': False}
-
-COLLECTION5 = 'df_completed'
-FIELDS5 = {'State': True, 'Year': True,'massShootings': True, 'accidentalDeath': True, 'fatalPoliceShootings': True,'_id': False}
-
 
 #add route to map the URLs to the data from MongoDB
 
@@ -35,7 +31,7 @@ FIELDS5 = {'State': True, 'Year': True,'massShootings': True, 'accidentalDeath':
 def index():
     return render_template("index.html")
 
-@app.route("/gun_violenceDB/accidentalDeath")
+@app.route("/gun_violence/accidentalDeath")
 def accidentalDeath():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION1]
@@ -47,7 +43,7 @@ def accidentalDeath():
     connection.close()
     return json_accidents
 
-@app.route("/gun_violenceDB/fatalPoliceShootings")
+@app.route("/gun_violence/fatalPoliceShootings")
 def fatalPoliceShootings():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION2]
@@ -59,7 +55,7 @@ def fatalPoliceShootings():
     connection.close()
     return json_fatalPoliceShootings
 
-@app.route("/gun_violenceDB/massShootings")
+@app.route("/gun_violence/massShootings")
 def massShootings():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION3]
@@ -71,7 +67,7 @@ def massShootings():
     connection.close()
     return json_massShootings
 
-@app.route("/gun_violenceDB/gunOwnership")
+@app.route("/gun_violence/gunOwnership")
 def gunOwnership():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION4]
@@ -82,19 +78,6 @@ def gunOwnership():
     json_gunOwnership = json.dumps(json_gunOwnership, default=json_util.default)
     connection.close()
     return json_gunOwnership
-
-@app.route("/gun_violenceDB/df_completed")
-def combinedData():
-    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
-    collection = connection[DBS_NAME][COLLECTION5]
-    deaths = collection.find(projection=FIELDS5)
-    json_combined = []
-    for death in deaths:
-        json_combined.append(death)
-    json_combined = json.dumps(json_combined, default=json_util.default)
-    
-    return json_combined
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=5000,debug=True)
