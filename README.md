@@ -37,32 +37,11 @@ https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
 
 * Set up database - Vertta/Selina
 * Clean data - James Dellinger
-* Flask API - Aimee
+* Flask API - William
 * HTML/CSS frame of website - Gina/Aimee
-* Interactions
-  - Interactive - Valentina/Michael
-  - Heatmap toggle button
-  - State Statistics Display
-* Drop Down Categories - William/Jarvis
-  - How has the pandemic affected gun violence
-    - Time
-    - Count of Data Categories
-  - Rate of death vs year
-    - Number of Deaths
-    - Year
-  - Rate of injury vs year
-    - Number of Injury
-    - Year
-  - Red vs Blue - Political view //need list of states and party affiliation
-    - State Party
-    - Time
-    - Count of Data Categories
-* Types of gun violence (Data categories) - displayed on map
-  - Mass Shooting
-  - Officer Involved Shootings
-  - Accidental Injuries
-  - Accidental Deaths
-* PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip
+* Interactive Map - Valentina/Michael
+* Drop Down Charts - Selina/Michael/Jarvis
+* PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip/William
  
 <p>
 
