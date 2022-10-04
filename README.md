@@ -71,7 +71,7 @@ https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
    <p>The extract process,.....<p> <br>
    <p>The transform process, we use jupyter notebook(gundata_clean_load.ipynb) to clean the original datasets includs sorting, rename, groupby and merge by year, state to get the data we need, then conver the cleaned datasets into json file. </p> <br>
    <p>The load process, we use pymongo, MongoClient to connect and load the datasets into MongoDB collections </p> <br>
-  Mongodb_gun_violenceDB.png
+  https://github.com/aimeevu/project-3-group-e/blob/selina/images/Mongodb_gun_violenceDB.png
 
 
 <h3> Python Flask Api</h3> <br> 
