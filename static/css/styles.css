@@ -1,9 +1,9 @@
-.bg-navbar {
-    background: #E8871E;
+.navbar {
+    background: #697268;
 }
 
 body {
-    background-color:;
+    background-color:#fbf8ec;
 
 }
 
@@ -14,6 +14,13 @@ body {
     
 }
 
+.title{
+  font-family: "Courier New",monospace;
+  color: #00203d;
+  text-align: center;
+  font-size: 45px;
+}
+
 
 .box {
     background-color: #EBF5DF; 
@@ -21,7 +28,7 @@ body {
 }
 
 
-/*GUNS GUNS GUNS header*/
+/*Index header*/
 h1 {
     color:#F4d58d;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,30 +39,22 @@ h1 {
     
 } 
 
-
-/*Gun Violence Epidemic header*/
-.gunviolence {
-  
-  color: #00203d;
-  text-align: left;
-  font-size: 45px;
-  font-family: "Courier New";
-  
-}
-    
+   
 h3 {
     text-align: center;
 }
 
-/*Click an icon header*/
+/*Click an icon header
 h4 {
   color: #00203d;
-}
+}*/
 
 /*Clickable Links Below Icons*/
 h4.landing {
     text-align: center;
     color: #00203d;
+    font-family: "Courier New",monospace;
+
            
 }
 
@@ -73,14 +72,20 @@ IMG.panel {
 
 }
 
+p{
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: justify;
+}
 
-p.copyright {
+
+/*p.copyright {
     color: grey;
     text-align: center;
     vertical-align: baseline;
     margin-top: 3%;
     
-}
+}*/
+
 footer {
   display:flex;
   background-color: #697268;
