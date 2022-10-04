@@ -35,12 +35,12 @@ a{
   text-shadow: 2px 2px rgb(158, 168, 175);
   } 
 
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 
 .title{
   font-family: "Courier New",monospace;
@@ -63,6 +63,23 @@ a{
   padding-bottom: 30px;
 }
 
+.policepic{
+  padding-top: 5px;
+}
+
+.policegraph{
+  padding-left: 150px;
+  padding-bottom: 50px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
 .box {
     background-color: #EBF5DF; 
