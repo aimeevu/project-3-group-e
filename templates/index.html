@@ -15,36 +15,54 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Dashboard</h1>
+        <h1>Gun Related Death</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-12">
         <div class="well">
-          <h5>Year</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
+         
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Gun Violence Info</h3>
+            <h3 class="panel-title">Gun Violence Charts:</h3>
+            <P>This charts examined 50 US states and the District of Columbia from January 1, 2019, to September 22, 2022. 
+              Statistical analysis was performed from September to October 2022</P>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
+
       <div class="col-md-12">
-        <canvas id="bar-chart" style="width:100%;max-width:700px"></canvas>
+        <canvas id="bar-chart" style="width:100%;max-width:1200px"></canvas>
       </div>
-      <div class="col-md-5">
-        <div id="list-items"></div>
+      
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <canvas id="line-chart" style="width:100%;max-width:1200px"></canvas>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <canvas id="line-chart" style="width:100%;max-width:700px"></canvas>
+        <h4>
+          <center>Death by Party Affiliations</center>
+        </h4>
+        <div id="canvas-holder" style="float:left;">
+          <center>AccidentalDeath</center>
+        <canvas id="pie-chart" style="width:100%;max-width:500px"></canvas>
+        </div>
+        <div id="canvas-holder" style="float:left;">
+          <center>MassShootingDeath</center>
+        <canvas id="pie-chart2" style="width:100%;max-width:500px"></canvas>
+        </div>
+        <div id="canvas-holder" style="float:left;">
+          <center>FatalPoliceShooting</center>
+        <canvas id="pie-chart3" style="width:100%;max-width:500px"></canvas>
+        </div>
       </div>
     </div>
-   
+
     <div class="col-md-12">
       <center>
       <h3>

@@ -7,6 +7,8 @@ from bson.json_util import dumps
 
 app = Flask(__name__)
 
+
+
 #build the server to retrive data from Mongo database
 
 MONGODB_HOST = 'localhost'
@@ -25,8 +27,24 @@ FIELDS3 = {'Year': True, 'Date': True, 'State': True, 'Killed': True, 'Injured':
 COLLECTION4 = 'gunOwnership'
 FIELDS4 = {'State': True, 'gunOwnership': True, 'totalGuns': True, '_id': False}
 
-COLLECTION5 = 'df_completed'
-FIELDS5 = {'State': True, 'Year': True,'massShootings': True, 'accidentalDeath': True, 'fatalPoliceShootings': True,'_id': False}
+COLLECTION5 = 'combine2019'
+FIELDS5 = {'Year': True, 'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
+
+COLLECTION6 = 'combine2020'
+FIELDS6 = {'Year': True, 'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
+
+COLLECTION7 = 'combine2021'
+FIELDS7 = {'Year': True, 'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
+
+COLLECTION8 = 'combine2022'
+FIELDS8 = {'Year': True, 'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
+
+COLLECTION9 = 'combinData_byState'
+FIELDS9 = {'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
+
+COLLECTION10 = 'combineData_StateParty'
+FIELDS10 = {'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
+
 
 
 #add route to map the URLs to the data from MongoDB
@@ -46,6 +64,8 @@ def accidentalDeath():
     json_accidents = json.dumps(json_accidents, default=json_util.default)
     connection.close()
     return json_accidents
+
+
 
 @app.route("/gun_violenceDB/fatalPoliceShootings")
 def fatalPoliceShootings():
@@ -83,11 +103,71 @@ def gunOwnership():
     connection.close()
     return json_gunOwnership
 
-@app.route("/gun_violenceDB/df_completed")
-def combinedData():
+@app.route("/gun_violenceDB/combine2019")
+def combine2019():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION5]
     deaths = collection.find(projection=FIELDS5)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
+
+@app.route("/gun_violenceDB/combine2020")
+def combine2020():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION6]
+    deaths = collection.find(projection=FIELDS6)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
+
+@app.route("/gun_violenceDB/combine2021")
+def combined2021():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION7]
+    deaths = collection.find(projection=FIELDS7)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
+
+@app.route("/gun_violenceDB/combine2022")
+def combined2022():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION8]
+    deaths = collection.find(projection=FIELDS8)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
+
+@app.route("/gun_violenceDB/combinData_byState")
+def combinData_byState():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION9]
+    deaths = collection.find(projection=FIELDS9)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
+
+@app.route("/gun_violenceDB/combineData_StateParty")
+def combineData_StateParty():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION10]
+    deaths = collection.find(projection=FIELDS10)
     json_combined = []
     for death in deaths:
         json_combined.append(death)
