@@ -51,7 +51,7 @@ FIELDS10 = {'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings'
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("charts.html")
 
 @app.route("/gun_violenceDB/accidentalDeath")
 def accidentalDeath():
