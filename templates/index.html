@@ -21,60 +21,54 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Gun Violence Dashboard</h1>
-        <p>Shoot someone today!<br>Use the interactive charts below to explore the dataset</p>
+        <h1>Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <p>
-        Fetches data from gun_violenceDB after importing the data using gundata_clean_load.ipynb.
-        <br><br>
-        Click to see json data in the console.
-        <div class="row"><button onclick="fetchMassShootings();">Fetch Mass Shootings</button></div>
-        <div class="row"><button onclick="fetchPoliceShootings();">Fetch Fatal Police Shootings</button></div>
-        <div class="row"><button onclick="fetchAccidentalDeath();">Fetch Accidental Deaths</button></div>
-        <div class="row"><button onclick="gunOwnership();">gunOwnership</button></div>
-      </p>
-    </div>
-    <div class="row">
       <div class="col-md-2">
-        <div>
-          <h5>Category Selection:</h5>
+        <div class="well">
+          <h5>Year</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+            <h3 class="panel-title">Gun Violence Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar">BAR GOES HERE</div>
+      <div class="col-md-12">
+        <canvas id="bar-chart" style="width:100%;max-width:700px"></canvas>
       </div>
       <div class="col-md-5">
-        <div id="chart">CHART GOES HERE</div>
+        <div id="list-items"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div id="bubble">
-          
-
-
-
-
-
-
-        </div>
+        <canvas id="line-chart" style="width:100%;max-width:700px"></canvas>
       </div>
     </div>
+   
+    <div class="col-md-12">
+      <center>
+      <h3>
+      <a href="https://github.com/aimeevu/project-3-group-e">Back To GitHub Repository</a>
+      </h3>
+    </center>
+    </div>
+    
   </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
-
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <script src="../static/js/chart.js"></script>
+ 
+ 
   
 </body>
 
