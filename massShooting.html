@@ -20,102 +20,80 @@
   <link rel="shortcut icon" type="image/jpg" href="image/visuals.png" />
 </head>
 
-  <body>
+<body>
 
 
-    <!-- Navbar  -->
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="image/visuals.png" alt="" width="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(28, 37, 153);">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="image/banner.png" alt="" width="35">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="massShooting.html">Mass Shooting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="police.html">Police Shooting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="map.html">Interactive Map</Map></a>
-            </li>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="links navbar" href="index.html">Home</a>
+          </li>
 
-          </ul>
+          <li class="nav-item">
+            <a class="links navbar active" aria-current="page"  href="massShooting.html">Mass Shooting</a>
+          </li>
 
-        </div>
+          <li class="nav-item">
+            <a class="links navbar" href="police.html">Police Shooting</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="links navbar" href="map.html">Interactive Map</Map></a>
+          </li>
+
+        </ul>
+
       </div>
-    </nav>
-
-    <div>
-        <style>
-
-            /* Container holding the image and the text */
-            .container-pic {
-            position: relative;
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px rgb(158, 168, 175);
-            } 
-    
-            /* Centered text */
-            .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            }
-  
-        </style>  
-  
-          <div class="container-pic">
-              <div class="row">
-                  <div class="col-md-12 jumbotron text-center">
-                      <img src="image/banner.png" alt="Stats" width="150">
-                      <h1 class="centered" style="font-size:4rem; color:black">Mass Shooting Comparison</h1>
-                  </div>
-              </div>
-          </div>
     </div>
-    
-    <br><br>
+  </nav><!-- End Navbar  -->
 
-    <style>
-        h3 {
-            text-align: center;
-            /* font-family: 'Segoe UI', cursive; */
-            font-size: 3rem;
-            padding-bottom: 0.2em;
-        }
-    
-    </style>
-    
-    <h3 style="color:rgb(28, 37, 153);">Let me Show You All Something</h3>
-    <div class="row justify-content-center">
-        <div class="col-md-6 text-center">
-            <p style="text-align:center">Below is an interactive bar chart displaying mass shooting around the United States. Feel free to interact with the chart to uncover more details in the data.</p>
-        </div>
-    </div>
-    
-
-    <div class="container">
+  <!--Title and Pic-->
+  <div>
+    <div class="container-pic">
       <div class="row">
-        <div class="col-md">
-          <div class="well">
-            <div id="mass_Shooting"></div>   
-            <script src="https://d3js.org/d3.v5.min.js"></script>
-            <script src="static/js/massShooting.js"></script>
+          <div class="col-md-12 jumbotron text-center">
+            <img src="image/banner.png" alt="Stats" width="150">
+            <h1 class="title" style="font-size:4rem; color:black">Mass Shooting Comparison</h1>
           </div>
-        </div>
       </div>
+    </div>
+  </div><!--End Title and Pic-->
+  
+
+  
+  <!--Subtitle and Description-->
+  <h3 class = "subtitle">Let me Show You All Something</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+          <p>Below is an interactive bar chart displaying mass shooting around the United States. Feel free to interact with the chart to uncover more details in the data.</p>
+      </div>
+    </div><!--End Subtitle and Description-->
+    
+
+  
+  <!--Mass Shooting Pic-->
+    <div class="container masspic">
+    <div class="row">
+      <div class="col-md">
+        <div class="well">
+          <div id="mass_Shooting"></div>   
+          <script src="https://d3js.org/d3.v5.min.js"></script>
+          <script src="static/js/massShooting.js"></script>
+      </div>
+    </div>
+  </div><!--End Mass Shooting Pic-->
 
 
       <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -123,10 +101,6 @@
       <div class="container">
 
       </div>
-
-
-    
-
 
 
       <!-- JavaScript: Bootstrap Bundle with Popper -->
@@ -137,22 +111,25 @@
     </div>
     <main class="flex-fill"></main>
   
-    <footer class="footer">
-      <div class="container-fluid opacity-50" style="background-color:rgb(28, 37, 153)">
-        <div style="color:rgb(255, 255, 255); text-align:left"><b>CREATED BY:</b>;
-          <a href="https://github.com/Ariwodo16" style="color:rgb(255, 255, 255)">Michael Ariwodo</a> 
-          • <a href="https://github.com/jlmamp"style="color:rgb(255, 255, 255)">Jarvis Lampton</a> 
-          • <a href="https://github.com/jdellinger80" style="color:rgb(255, 255, 255)">James Dellinger</a> 
-          • <a href="https://github.com/aimeevu"style="color:rgb(255, 255, 255)">Aimee Vu</a> 
-          • <a href="https://github.com/sesy0722"style="color:rgb(255, 255, 255)">Selina</a></div>
-          • <a href="https://github.com/pradipraodeo"style="color:rgb(255, 255, 255)">Pradip Raodeo</a>
-          • <a href="https://github.com/WMatthewARC"style="color:rgb(255, 255, 255)">William Mills</a>
-          • <a href="https://github.com/vertta"style="color:rgb(255, 255, 255)">Vertta Moody</a>
-          • <a href="https://github.com/vkk125"style="color:rgb(255, 255, 255)">Valentina Zhu </a>
-          • <a href="https://github.com/GigiSchulte"style="color:rgb(255, 255, 255)">Gina Schulte</a>
-      </div>  
+    <!--Footer-->
+  <footer class="footer">
+    <div class="container-fluid opacity-50">
+      <div><b>CREATED BY</b>
+        <a href="https://github.com/Ariwodo16" class = "footerlinks">• Michael Ariwodo</a> 
+        <a href="https://github.com/jdellinger80" class = "footerlinks">• James Dellinger</a> 
+        <a href="https://github.com/jlmamp" class = "footerlinks">• Jarvis Lampton</a> 
+        <a href="https://github.com/WMatthewARC" class = "footerlinks">• William Mills</a>
+        <a href="https://github.com/vertta" class = "footerlinks">• Vertta Moody</a>
+        <a href="https://github.com/pradipraodeo" class = "footerlinks">• Pradip Raodeo</a>
+        <a href="https://github.com/GigiSchulte" class = "footerlinks">• Gina Schulte</a>
+        <a href="https://github.com/sesu0722" class = "footerlinks">• Selina (I Ju Su)</a>
+        <a href="https://github.com/aimeevu" class = "footerlinks">• Aimee Vu</a> 
+        <a href="https://github.com/vkk125" class = "footerlinks">• Valentina Zhu</a>
       </div>
-    </footer>
-  </body>
+      
+    </div>
+  </footer><!--End Footer-->
+
+</body>
 
 </html>

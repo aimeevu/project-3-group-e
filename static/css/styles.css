@@ -11,25 +11,36 @@
 
 body {
     background-color:#fbf8ec;
-
+    padding: 0;
+    margin: 0;
 }
 
 a{
   text-decoration: none;
 }
 
-/*a .nav-link{
-  color: #F4d58d;
-}*/
-
 .text-block{
   padding: 50px;
+  text-decoration: none;
 }
 
 .container {
-    margin-top: 3%;
-    
+    margin-top: 3%;   
 }
+
+.container-pic {
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgb(158, 168, 175);
+  } 
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
 .title{
   font-family: "Courier New",monospace;
@@ -39,6 +50,19 @@ a{
   font-size: 60px;
 }
 
+.subtitle{
+  font-family: "Courier New",monospace;
+  color: #0e1116;
+  text-align: center;
+  font-family: 'Segoe UI', cursive;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.masspic{
+  padding-bottom: 30px;
+}
+
 
 .box {
     background-color: #EBF5DF; 
@@ -46,38 +70,16 @@ a{
 }
 
 
-/*Index header*/
-h1 {
-    color:#F4d58d;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #697268;
-    padding-top: 0px; 
-    padding-bottom: 2px; 
-    text-align: left;
-    
-} 
-
-   
-h3 {
-    text-align: center;
-}
-
-/*Click an icon header
-h4 {
-  color: #00203d;
-}*/
-
-/*Clickable Links Below Icons*/
+/*Clickable Text Below Pics*/
 h4.landing {
     text-align: center;
     color: #00203d;
     font-family: "Courier New",monospace;
-    padding-top: 25px;
-
-           
+    padding-top: 25px;          
 }
 
 
+/*Clickable Images*/
 IMG.panel {
     display: block;
     margin-left: auto;
@@ -86,11 +88,10 @@ IMG.panel {
     padding-top: 2%;
     width: 250px;
     height: 200px;
-    z-index: 2;
-       
-
+    z-index: 2;       
 }
 
+/*Paragraphs*/
 p{
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: justify;
@@ -127,6 +128,7 @@ footer {
   color:#F4d58d;
   text-decoration: none;
 }
+
 
 .links:hover {
   color:#F4d58d;
@@ -181,19 +183,10 @@ body,
         color: yellow;
       }
       /* Remove the default margin and padding from the body. */
-body {
-    padding: 0;
-    margin: 0;
-  }
-  
+
   /* Set map, body, and html to 100% of the screen size. */
   #map,
   body,
   html {
     height: 100%;
   }
-  
-  h1 {
-    text-align: center;
-  }
-  
