@@ -7,7 +7,17 @@ body {
 
 }
 
+a{
+  text-decoration: none;
+}
 
+/*a .nav-link{
+  color: #F4d58d;
+}*/
+
+.text-block{
+  padding: 100px;
+}
 
 .container {
     margin-top: 3%;
@@ -54,6 +64,7 @@ h4.landing {
     text-align: center;
     color: #00203d;
     font-family: "Courier New",monospace;
+    padding-top: 25px;
 
            
 }
@@ -65,7 +76,7 @@ IMG.panel {
     margin-right: auto;
     margin-bottom: 2%; 
     padding-top: 2%;
-    width: 200px;
+    width: px;
     height: 200px;
     z-index: 2;
        
@@ -102,12 +113,14 @@ footer {
      align-items:center;
 }
 
-.links {
+
+/*Footer Link*/
+.footerlinks {
   color:#F4d58d;
   text-decoration: none;
 }
 
-.links:hover {
+.footerlinks:hover {
   color:#F4d58d;
 }
 
