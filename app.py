@@ -45,6 +45,9 @@ FIELDS9 = {'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPo
 COLLECTION10 = 'combineData_StateParty'
 FIELDS10 = {'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
 
+COLLECTION11 = 'gunOwnership_StateParty'
+FIELDS11 = {'gunOwnership': True,'totalGuns': True,'_id': False}
+
 
 
 #add route to map the URLs to the data from MongoDB
@@ -175,6 +178,17 @@ def combineData_StateParty():
     
     return json_combined
 
+@app.route("/gun_violenceDB/gunOwnership_StateParty")
+def gunOwnership_StateParty():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION11]
+    deaths = collection.find(projection=FIELDS11)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=5000,debug=True)

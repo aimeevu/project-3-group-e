@@ -32,7 +32,7 @@
              datasets: [
                 {
                    label: "totalDeath",
-                   backgroundColor: "#8e5ea2",
+                   backgroundColor: "#A76EAF",
                    data: values
                 }
              ]
@@ -63,19 +63,19 @@
               {
                 data: values_a, 
                 label: "AccidentalDeath",
-                borderColor: "red",  
+                borderColor: "#D64550",  
                 fill: false  
               },
               {
                 data: values_m, 
                 label: "MassShootings",
-                borderColor: "green",  
+                borderColor: "#2E1E0F",  
                 fill: false
               },
               {
                 data: values_f, 
                 label: "FatalPoliceShootings",
-                borderColor: "blue",  
+                borderColor: "#A76EAF",  
                 fill: false
               }
            ]
@@ -117,7 +117,7 @@
              datasets: [
                 {
                    label: "Death by Party Affiliations",
-                   backgroundColor: ['blue','red'],
+                   backgroundColor: ['#334BFF','#D64550'],
                    data: values_a
                 }
              ]
@@ -146,7 +146,7 @@
                datasets: [
                   {
                      label: "Death by Party Affiliations",
-                     backgroundColor: ['blue','red'],
+                     backgroundColor: ['#334BFF','#D64550'],
                      data: values_m
                   }
                ]
@@ -174,7 +174,7 @@
                datasets: [
                   {
                      label: "Death by Party Affiliations",
-                     backgroundColor: ['blue','red'],
+                     backgroundColor: ['#334BFF','#D64550'],
                      data: values_f
                   }
                ]
@@ -198,4 +198,43 @@
           
     
       }
+      //Pie chart
+   getData3();
+   async function getData3() {
+      const response = await fetch("/gun_violenceDB/gunOwnership_StateParty");
+      const data = await response.json();
+   
+      var dataset_g=data[0]
+      console.log(dataset_g)
 
+      values_g = [dataset_g.totalGuns.Democratic, dataset_g.totalGuns.Republican];
+
+      new Chart(document.getElementById("pie4-chart"), {
+         type: 'pie',
+         data: {
+            labels: ["Democratic","Republican"],
+            datasets: [
+               {
+                  label: "TotalGuns by Party Affiliations",
+                  backgroundColor: ['#334BFF','#D64550'],
+                  data: values_g
+               }
+            ]
+         },
+         options: {
+           responsive: true,
+           plugins: {
+              legend: {display: true, position: 'right'},
+              title: {
+                 display: true,
+                 text: 'AccidentalDeath by Party',
+                 padding:{
+                    top: 10,
+                    bottom:20
+                 }
+              }
+            }
+          },
+             
+          });
+   }
