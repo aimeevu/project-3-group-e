@@ -1,6 +1,6 @@
 getData();
 async function getData() {
-   const response = await fetch("../gun_violenceDB/combinData_byState");
+   const response = await fetch("/gun_violenceDB/combinData_byState");
    const data = await response.json();
    console.log(data);
    
