@@ -46,4 +46,8 @@
 
 ### Flask Application Overview:
 
+### Decorating The Site:
+
+https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
+
 ### Visualizations
