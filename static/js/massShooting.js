@@ -1,5 +1,5 @@
 // load json data
-d3.json("./json_data/clean_massShooting.json").then((data) => {
+d3.json("../json_data/clean_massShooting.json").then((data) => {
     console.log(data);
     // calculate the size of objects (# of rows)
     var config = {responsive:true}
