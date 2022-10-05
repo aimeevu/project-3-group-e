@@ -1,6 +1,6 @@
 getData();
 async function getData() {
-   const response = await fetch("/gun_violenceDB/combinData_byState");
+   const response = await fetch("../gun_violenceDB/combinData_byState");
    const data = await response.json();
    console.log(data);
    
@@ -95,7 +95,7 @@ async function getData() {
 //Pie chart
 getData2();
 async function getData2() {
-   const response = await fetch("/gun_violenceDB/combineData_StateParty");
+   const response = await fetch("../gun_violenceDB/combineData_StateParty");
    const data = await response.json();
    console.log(data);
    
