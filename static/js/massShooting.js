@@ -24,7 +24,7 @@ d3.json("./json_data/clean_massShooting.json").then((data) => {
         y: injure_array,
         name: 'Injured',
         type: 'bar',
-        marker: {color: 'rgb(255, 0, 255)'}
+        marker: {color: 'rgb(214, 69, 80)'}
     };
 
     var trace_killed = {
@@ -32,7 +32,7 @@ d3.json("./json_data/clean_massShooting.json").then((data) => {
         y: kill_array,
         name: 'Killed',
         type: 'bar',
-        marker: {color: 'rgb(0, 0, 255)'}
+        marker: {color: 'rgb(167, 110, 175)'}
     };
 
     var data = [trace_injured, trace_killed];
