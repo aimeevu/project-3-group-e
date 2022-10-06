@@ -43,9 +43,13 @@
 ### Sketch:
 
 ### ETL Methodology Used:
+* Data was  pulled into a Jupyter notebook and cleansed using python to ensure the dataset had consistency across data sets . The date chosen were after 2019.  
+* Fields Needed For Charts - # Killed, # Injured, State, Year
+* Fields Needed For Map - State, Gun Ownership Percentage
 
 ### Flask Application Overview:
 
+![Flask API] (project-3-group-e/image/Api_accidentalDeath.png)
 ### Decorating The Site:
 
 https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
