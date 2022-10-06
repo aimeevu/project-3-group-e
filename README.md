@@ -49,7 +49,7 @@
 
 ### Flask Application Overview:
 
-![Flask API] (project-3-group-e/image/Api_accidentalDeath.png)
+[Flask API] project-3-group-e/image/Api_accidentalDeath.png 
 ### Decorating The Site:
 
 https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
