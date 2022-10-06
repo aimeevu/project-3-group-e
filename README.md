@@ -6,8 +6,7 @@
 
 ### Group Members:
 
-* <a href="https://github.com/sesu0722">Selina</a>
-* <a href="https://github.com/Ariwodo16">Mike Ariwodo</a>
+* <a href="https://github.com/sesu0722">•Selina</a> * <a href="https://github.com/Ariwodo16">•Mike Ariwodo</a>
 * <a href="https://github.com/WMatthewARC">William M</a>
 * <a href="https://github.com/aimeevu">Aimee V</a>
 * <a href="https://github.com/jlmamp">Jarvis L</a>
