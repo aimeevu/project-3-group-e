@@ -41,7 +41,7 @@
 * PowerPoint Presentation - (Done by Tuesday) - Aimee/Pradip/William
 
 ### Sketch:
-
+![sketch](./image/ReadMe-sketch.png)
 ### ETL Methodology Used:
 * Data was  pulled into a Jupyter notebook and cleansed using python to ensure the dataset had consistency across data sets . The date chosen were after 2019.  
 * Fields Needed For Charts - # Killed, # Injured, State, Year
@@ -49,9 +49,21 @@
 
 ### Flask Application Overview:
 
-![Flask API] (./Project-3-group-e/image/Api_accidentalDeath.png )
+![Flask](./image/Api_accidentalDeath.png )
+
 ### Decorating The Site:
 
 https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
 
 ### Visualizations
+
+* Gun ownership by State - Interactive map
+
+![map](./image/mappic.jpg)
+
+* Injured vs Killed visualization
+
+![injured](./image/Readme-injured-killed.png)
+
+### Detailed Slide Presentation
+https://docs.google.com/presentation/d/1w0D63aHJv9MmNJ9_1C4eheo7YGbr6smnntOjoIW29xI/edit#slide=id.g15d964c9d0f_0_11
