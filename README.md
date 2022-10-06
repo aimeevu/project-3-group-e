@@ -4,6 +4,12 @@
 ### Description:
 <p>We all know that gun violence in the US is prevalent, but is gun violence getting worse over the years? For our project, we will use an interactive  dashboard to show viewers the impact that guns have had over the years across the US. How has the pandemic impacted gun violence? Has gun violence increased in a certain state, and does being a red state or a blue state affect their safety from the dangers of guns? Our goal is to create a visual presentation of the data that we find to answer these questions.</p>
 
+### Project Website
+<a href= "https://aimeevu.github.io/project-3-group-e/templates/index.html">Click Me To Enter Our Site</a>
+
+### Detailed Slide Presentation
+<a href= "https://docs.google.com/presentation/d/1w0D63aHJv9MmNJ9_1C4eheo7YGbr6smnntOjoIW29xI/edit#slide=id.g15d964c9d0f_0_11">Click Me To View Our Presentation</a>
+
 ### Group Members:
 
 * <a href="https://github.com/sesu0722">Selina</a>
@@ -55,8 +61,7 @@
 
 https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
 
-### Project Website
-https://aimeevu.github.io/project-3-group-e/templates/index.html 
+
 
 ### Visualizations
 
@@ -68,5 +73,4 @@ https://aimeevu.github.io/project-3-group-e/templates/index.html
 
 ![injured](./image/Readme-injured-killed.png)
 
-### Detailed Slide Presentation
-https://docs.google.com/presentation/d/1w0D63aHJv9MmNJ9_1C4eheo7YGbr6smnntOjoIW29xI/edit#slide=id.g15d964c9d0f_0_11
+
