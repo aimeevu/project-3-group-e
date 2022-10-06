@@ -24,7 +24,7 @@ FIELDS2 = {'Year': True, 'Date': True, 'State': True, 'City': True, 'manner_of_d
 COLLECTION3 = 'massShootings'
 FIELDS3 = {'Year': True, 'Date': True, 'State': True, 'Killed': True, 'Injured': True, '_id': False}
 
-COLLECTION4 = 'gunOwnership'
+COLLECTION4 = 'gunOwnership2022'
 FIELDS4 = {'State': True, 'gunOwnership': True, 'totalGuns': True, '_id': False}
 
 COLLECTION5 = 'combine2019'
@@ -48,7 +48,8 @@ FIELDS10 = {'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings'
 COLLECTION11 = 'gunOwnership_StateParty'
 FIELDS11 = {'gunOwnership': True,'totalGuns': True,'_id': False}
 
-
+COLLECTION12 = 'combinedData2'
+FIELDS12 = {'Year': True, 'State': True, 'massShootings': True,'accidentalDeath': True,'fatalPoliceShootings': True,'_id': False}
 
 #add route to map the URLs to the data from MongoDB
 
@@ -94,8 +95,8 @@ def massShootings():
     connection.close()
     return json_massShootings
 
-@app.route("/gun_violenceDB/gunOwnership")
-def gunOwnership():
+@app.route("/gun_violenceDB/gunOwnership2022")
+def gunOwnership2022():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION4]
     guns = collection.find(projection=FIELDS4)
@@ -189,6 +190,18 @@ def gunOwnership_StateParty():
     json_combined = json.dumps(json_combined, default=json_util.default)
     
     return json_combined
+@app.route("/gun_violenceDB/combinedData2")
+def combinedData2():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION12]
+    deaths = collection.find(projection=FIELDS12)
+    json_combined = []
+    for death in deaths:
+        json_combined.append(death)
+    json_combined = json.dumps(json_combined, default=json_util.default)
+    
+    return json_combined
+   
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=5000,debug=True)
