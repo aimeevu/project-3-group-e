@@ -56,7 +56,7 @@
 https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
 
 ### Project Website
-https://aimeevu.github.io/project-3-group-e/index.html 
+https://aimeevu.github.io/project-3-group-e/templates/index.html 
 
 ### Visualizations
 
