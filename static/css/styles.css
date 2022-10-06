@@ -1,3 +1,4 @@
+/*Navbar and Footer Styling*/
 .navbar {
     background: #697268;
     color: #F4d58d;
@@ -9,14 +10,19 @@
   font-weight: bold;
 }
 
-body {
-    background-color:#fbf8ec;
-    padding: 0;
-    margin: 0;
+.links:hover {
+  color:#F4d58d;
 }
 
-a{
-  text-decoration: none;
+
+
+/*Titles, Subtitles & Headers*/
+.title{
+  font-family: "Monaco",monospace;
+  color: #0e1116;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
 }
 
 .text-block{
@@ -24,30 +30,17 @@ a{
   text-decoration: none;
 }
 
-.container {
-    margin-top: 3%;   
+.homesubtitle{
+  font-family:cursive;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
-.container-pic {
-  position: relative;
+h4.landing {
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px rgb(158, 168, 175);
-  }
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-
-.title{
-  font-family: "Monaco",monospace;
-  color: #0e1116;
-  font-weight: bold;
-  text-align: center;
-  font-size: 60px;
+  color: #00203d;
+  font-family: "Courier New",monospace;  
+  font-weight: bold;   
 }
 
 .subtitle{
@@ -58,8 +51,41 @@ a{
   font-size: 30px;
 }
 
-.masspic{
-  padding-bottom: 30px;
+
+
+
+/*Body*/
+body {
+  background-color:#fbf8ec;
+  padding: 0;
+  margin: 0;}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-family: "Monaco", "Courier New", monospace;
+  text-align: justify;
+}
+
+
+
+/*Images & Maps*/
+
+  /*Icons on Homepage*/
+IMG.panel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%; 
+  width: 300px;
+  height: 300px;
+  z-index: 2;  
+  border: 2px solid #555;
+  border-radius: 8px;
+  filter: grayscale(40%);
+  box-shadow: 20px 20px 50px grey;
 }
 
 .policepic{
@@ -71,84 +97,26 @@ a{
   padding-bottom: 50px;
 }
 
-
-.box {
-    background-color: #EBF5DF; 
-    min-height: 500px;
-}
-
-
-/*Clickable Text Below Pics*/
-h4.landing {
-    text-align: center;
-    color: #00203d;
-    font-family: "Courier New",monospace;
-    padding-top: 25px;   
-    font-weight: bold;       
-}
-
-.homesubtitle{
-  font-family:cursive;
-  font-size: 20px;
+.masspic{
+  border: 10px solid #555;
+  margin-left: auto;
+  position: center;
 
 }
 
-
-/*Clickable Images*/
-IMG.panel {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%; 
-    padding-top: 2%;
-    width: 250px;
-    height: 200px;
-    z-index: 2;       
+.icon{
+  background-color: #fbf8ec;
+  filter: sepia(60%);
 }
 
-/*Paragraphs*/
-p{
-  font-family: "Monaco", "Courier New", monospace;
-  text-align: justify;
+/* Set map, body, and html to 100% of the screen size. */
+#map,
+body,
+html {
+  height: 86.7%;
 }
 
-
-/*p.copyright {
-    color: grey;
-    text-align: center;
-    vertical-align: baseline;
-    margin-top: 3%;
-    
-}*/
-
-footer {
-  display:flex;
-  background-color: #697268;
-  color: #F4d58d;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  width: 100%;
-  border-top: 1px solid white;
-  justify-content:center;
-     align-items:center;
-}
-
-
-/*Footer Link*/
-.footerlinks {
-  color:#F4d58d;
-  text-decoration: none;
-}
-
-
-.links:hover {
-  color:#F4d58d;
-}
-
+/* Remove the default margin and padding from the body. */
 html,
 body,
 #map-id {
@@ -197,11 +165,73 @@ body,
       .panel2 {
         color: yellow;
       }
-      /* Remove the default margin and padding from the body. */
+      
 
-  /* Set map, body, and html to 100% of the screen size. */
-  #map,
-  body,
-  html {
-    height: 95.5%;
+
+
+
+/*Footer*/
+footer {
+  display:flex;
+  background-color: #697268;
+  color: #F4d58d;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid white;
+  justify-content:center;
+     align-items:center;
+}
+
+.footerlinks {
+  color:#F4d58d;
+  text-decoration: none;
+}
+
+.footerlinks:hover {
+  color:#4d2d52;
+}
+
+
+
+
+
+/*.container-pic {
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgb(158, 168, 175);
   }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+
+
+.box {
+    background-color: #EBF5DF; 
+    min-height: 500px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
