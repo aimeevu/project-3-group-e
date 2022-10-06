@@ -24,7 +24,13 @@
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Gun Violence Charts:</h3>
+        <P>This charts examined 50 US states and the District of Columbia from January 1, 2019, to September 22, 2022. 
+          Statistical analysis was performed from September to October 2022</P>
+     </div>
+     </div> 
     <div class="row">
       <div class="col-md-12">
         <center>
@@ -50,16 +56,16 @@
          <h4>
            <center>Death by Party Affiliations</center>
          </h4>
-         <div id="canvas-holder" style="float:left;">
+         <div id="canvas-holder" >
            <center>AccidentalDeath</center>
          <canvas id="pie-chart" style="width:100%;max-width:400px"></canvas>
          </div>
-         <div id="canvas-holder"style="float:left;" >
+         <div id="canvas-holder"  style="float:left;">
            <center>MassShootingDeath</center>
          <canvas id="pie-chart2" style="width:100%;max-width:400px"></canvas>
          
         </div>
-         <div id="canvas-holder" style="float:left;">
+         <div id="canvas-holder"  style="float:right;">
            <center>FatalPoliceShooting</center>
          <canvas id="pie-chart3" style="width:100%;max-width:400px"></canvas>
          </div>
@@ -70,8 +76,9 @@
 
     <div class="row">
       <div class="col-md-12">
+        <h5>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h5>
         <div class="well">
-          <h5>Seclect The Year:</h5>
+          <h5>Seclect The Year for U.S. Death Count:</h5>
           <select id="myDropdown" class="dropbtn" data-native-menu="true">
             <option value="2019" selected='selected'>2019</option>
             <option value='2020'>2020</option>
@@ -82,29 +89,19 @@
             <button type="submit" onclick="SearchContext()" id="searchbutton" style="height:50px; width:150px" class="searchbtn">Search Now</button>
           </td>
 
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Gun Violence Charts:</h3>
-            <P>This charts examined 50 US states and the District of Columbia from January 1, 2019, to September 22, 2022. 
-              Statistical analysis was performed from September to October 2022</P>
-    
-      </div>
 
+
+    <div class="row">
       <div class="col-md-12" >
         <div id="canvas-holder" >
         <canvas id="bar-chart" style="width:100%;max-width:1200px"></canvas>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <canvas id="line-chart" style="width:100%;max-width:1200px"></canvas>
-        </div>
+    
+      <div class="col-md-12">
+        <canvas id="line-chart" style="width:100%;max-width:1200px"></canvas>
       </div>
-      
-    </div>
-  
-
-
+    
     <div class="col-md-12">
       <center>
       <h3>
@@ -112,7 +109,7 @@
       </h3>
     </center>
     </div>
-    
+  </div> 
   </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>

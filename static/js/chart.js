@@ -409,8 +409,8 @@
   };
 
 // Pull data for new subject into charts.
-function optionChanged(newState) {
-  mycharts2020(newState);
+function optionChanged(newYear) {
+  mycharts2020(newYear);
 
 }
 init(); 
