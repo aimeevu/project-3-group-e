@@ -4,13 +4,15 @@ d3.json("../json_data/clean_massShooting.json").then((data) => {
     // calculate the size of objects (# of rows)
     var config = {responsive:true}
 
+
+
     let year_array =  [];
     let state_array = [];
     let kill_array = [];
     let injure_array = [];
     let city_array = [];
 
-    for (let key = 0; key<100; key++) {
+    for (let key = 0; key<1800; key++) {
         year_array.push(data[key].Year);
         state_array.push(data[key].State);
         city_array.push(data[key].City_Or_County);
@@ -38,13 +40,11 @@ d3.json("../json_data/clean_massShooting.json").then((data) => {
     var data = [trace_injured, trace_killed];
       
     var layout = {
-        barmode: 'stack',
+        barmode: 'group',
         title: "Injured vs Killed",
-        yaxis: {
-                labelAutoFit: true},
-      margin: { t: 70, l: 180 }
+      margin: { t: 80, l: 180 }
       };
     
     Plotly.newPlot('mass_Shooting', data, layout, config);
-
+   
 });
