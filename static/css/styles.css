@@ -107,6 +107,7 @@ IMG.panel {
 .icon{
   background-color: #fbf8ec;
   filter: sepia(60%);
+  border: 3px solid #555;
 }
 
 /* Set map, body, and html to 100% of the screen size. */
