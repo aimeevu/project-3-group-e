@@ -24,6 +24,7 @@ d3.json("../json_data/clean_massShooting.json").then((data) => {
     var trace_injured = {
         x: state_array,
         y: injure_array,
+        width: 0.4,
         name: 'Injured',
         type: 'bar',
         marker: {color: 'rgb(214, 69, 80)'}
@@ -37,10 +38,11 @@ d3.json("../json_data/clean_massShooting.json").then((data) => {
         marker: {color: 'rgb(167, 110, 175)'}
     };
 
-    var data = [trace_injured, trace_killed];
+    var data = [trace_killed, trace_injured];
       
     var layout = {
         barmode: 'group',
+        bargap: 0.3,
         title: "Injured vs Killed",
       margin: { t: 80, l: 180 }
       };
