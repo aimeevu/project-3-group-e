@@ -55,7 +55,8 @@
 
 ### Flask Application Overview:
  <p>With the database loaded, we connect MongoDB and import the data to active Api for visualization with Javascript</p>
-![Flask](./image/Api_accidentalDeath.png )
+ 
+![Flask](./image/Api_accidentalDeath.png)
 
 ### Decorating The Site:
 
