@@ -54,7 +54,7 @@
 * Fields Needed For Map - State, Gun Ownership Percentage
 
 ### Flask Application Overview:
-
+ <p>With the database loaded, we connect MongoDB and import the data to active Api for visualization with Javascript</p>
 ![Flask](./image/Api_accidentalDeath.png )
 
 ### Decorating The Site:
@@ -73,4 +73,11 @@ https://coolors.co/334bff-4d2d52-f4d58d-697268-d64550
 
 ![injured](./image/Readme-injured-killed.png)
 
-
+* Dashboard for Gun violence
+   <p>The dashboard contains pie charts for gun violence vs.party affiliation, bar chart for the total death count of each states and line chart representing three different kinds of gun violence. With a dropdown to see the data from year to year</p>
+   <p>Pie charts: charts are created using Javascript chart.js library base on the gun ownership by states data and gun death by states. Which shows the total counts for guns and death in blue vs. red states.</p> 
+   ![pie](https://github.com/aimeevu/project-3-group-e/blob/selina/images/By%20party.png)
+   <br>
+   <p>Bar chart and line chart: The bar chart and line chart are made by chart.js as well. The data is the combined dataset that contains the information per year and state. these two charts will show new data base on the dropdown selections</p>
+  ![bar&line](https://github.com/aimeevu/project-3-group-e/blob/selina/images/bar%20and%20line.png)
+   <br>
