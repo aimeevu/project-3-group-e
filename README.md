@@ -79,10 +79,10 @@ https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
   
 <h3>Dashboard for Gun violence</h3> <br>
    <p>The dashboard contains pie charts for gun violence vs.party affiliation, bar chart for the total death count of each states and line chart representing three different kinds of gun violence. With a dropdown to see the data from year to year</p>
-   <p>Pie charts: charts are created using Javascript chart.js library base on the gun ownership by states data and gun death by states. Which shows the total counts for guns and death in blue vs. red states.</p> <br>
+   <p>Pie charts: charts are created using Javascript chart.js library base on the gun ownership by states data and gun death by states. Which shows the total counts for guns and death in blue vs. red states.</p> 
    https://github.com/aimeevu/project-3-group-e/blob/selina/images/By%20party.png
    <br>
-   <p>Bar chart and line chart: The bar chart and line chart are made by chart.js as well. The data is the combined dataset that contains the information per year and state. these two charts will show new data base on the dropdown selections</p><br>
+   <p>Bar chart and line chart: The bar chart and line chart are made by chart.js as well. The data is the combined dataset that contains the information per year and state. these two charts will show new data base on the dropdown selections</p>
   https://github.com/aimeevu/project-3-group-e/blob/selina/images/bar%20and%20line.png
    <br>
 
