@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 3</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Gun Violence Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Gun Violence Charts:</h3>
+        <P>This charts examined 50 US states and the District of Columbia from January 1, 2019, to September 22, 2022. 
+          Statistical analysis was performed from September to October 2022</P>
+     </div>
+     </div> 
+    <div class="row">
+      <div class="col-md-12">
+        <center>
+        <div id="canvas-holder">
+         <h4>
+           Total Guns by Party Affiliations
+           <canvas id="pie-chart5" style="width:100%;max-width:600px"></canvas>
+         </h4>
+        </div> 
+        <div id="canvas-holder">
+         <h4>
+          Total Death by Party Affiliations
+          <canvas id="pie-chart4" style="width:100%;max-width:600px"></canvas>
+        </h4>
+       </div>
+      </center>
+      </div>
+      
+     </div>
+     <div class="row">
+       <center>
+       <div class="col-md-12" align="center">
+         <h4>
+           <center>Death by Party Affiliations</center>
+         </h4>
+         <div id="canvas-holder" >
+           <center>AccidentalDeath</center>
+         <canvas id="pie-chart" style="width:100%;max-width:400px"></canvas>
+         </div>
+         <div id="canvas-holder"  style="float:left;">
+           <center>MassShootingDeath</center>
+         <canvas id="pie-chart2" style="width:100%;max-width:400px"></canvas>
+         
+        </div>
+         <div id="canvas-holder"  style="float:right;">
+           <center>FatalPoliceShooting</center>
+         <canvas id="pie-chart3" style="width:100%;max-width:400px"></canvas>
+         </div>
+        
+       </div>
+     </center>
+     </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h5>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h5>
+        <div class="well">
+          <h5>Seclect The Year for U.S. Death Count:</h5>
+          <select id="myDropdown" class="dropbtn" data-native-menu="true">
+            <option value="2019" selected='selected'>2019</option>
+            <option value='2020'>2020</option>
+            <option value='2021'>2021</option>
+            <option value='2022'>2022</option>
+          </select>
+          <td> 
+            <button type="submit" onclick="SearchContext()" id="searchbutton" style="height:50px; width:150px" class="searchbtn">Search Now</button>
+          </td>
+
+
+
+    <div class="row">
+      <div class="col-md-12" >
+        <div id="canvas-holder" >
+        <canvas id="bar-chart" style="width:100%;max-width:1200px"></canvas>
+        </div>
+      </div>
+    
+      <div class="col-md-12">
+        <canvas id="line-chart" style="width:100%;max-width:1200px"></canvas>
+      </div>
+    
+    <div class="col-md-12">
+      <center>
+      <h3>
+      <a href="https://github.com/aimeevu/project-3-group-e">Back To GitHub Repository</a>
+      </h3>
+    </center>
+    </div>
+  </div> 
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <script src="../static/js/chart.js"></script>
+  
+
+  <footer class="footer">
+    <div class="container-fluid opacity-50">
+      <div><b>CREATED BY</b>
+        <a href="https://github.com/Ariwodo16" class = "footerlinks">• Michael Ariwodo</a> 
+        <a href="https://github.com/jdellinger80" class = "footerlinks">• James Dellinger</a> 
+        <a href="https://github.com/jlmamp" class = "footerlinks">• Jarvis Lampton</a> 
+        <a href="https://github.com/WMatthewARC" class = "footerlinks">• William Mills</a>
+        <a href="https://github.com/vertta" class = "footerlinks">• Vertta Moody</a>
+        <a href="https://github.com/pradipraodeo" class = "footerlinks">• Pradip Raodeo</a>
+        <a href="https://github.com/GigiSchulte" class = "footerlinks">• Gina Schulte</a>
+        <a href="https://github.com/sesu0722" class = "footerlinks">• Selina (I Ju Su)</a>
+        <a href="https://github.com/aimeevu" class = "footerlinks">• Aimee Vu</a> 
+        <a href="https://github.com/vkk125" class = "footerlinks">• Valentina Zhu</a>
+      </div>
+      
+    </div>
+  </footer><!--End Footer-->
+      
+  <!--Ending Bootstrap Code-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+  crossorigin="anonymous"></script>        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+  crossorigin="anonymous"></script>        
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+  crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
