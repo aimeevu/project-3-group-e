@@ -8,7 +8,7 @@
 <a href= "https://aimeevu.github.io/project-3-group-e/templates/index.html">Click Me To Enter Our Site</a>
 
 ### Detailed Slide Presentation
-<a href= "https://docs.google.com/presentation/d/1w0D63aHJv9MmNJ9_1C4eheo7YGbr6smnntOjoIW29xI/edit#slide=id.g15d964c9d0f_0_11">Click Me To View Our Presentation</a>
+<a href= "project_documents/Group E Project 3.pdf">Click Me To View Our Presentation</a>
 
 ### Group Members:
 
