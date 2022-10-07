@@ -68,12 +68,23 @@ https://en.wikipedia.org/wiki/Political_party_strength_in_U.S._states  <br>
 <h3>Sketch: </h3>  <br>
 
 <h3>ETL</h3>
-   <p>The extract process,.....<p> <br>
+   <p>The extract process started from online search for representable data, we found 4 datasets of the gun violence from 2019 to 9/2022. We extract the data as csv files.<p> <br>
    <p>The transform process, we use jupyter notebook(gundata_clean_load.ipynb) to clean the original datasets includs sorting, rename, groupby and merge by year, state to get the data we need, then conver the cleaned datasets into json file. </p> <br>
    <p>The load process, we use pymongo, MongoClient to connect and load the datasets into MongoDB collections </p> <br>
   https://github.com/aimeevu/project-3-group-e/blob/selina/images/Mongodb_gun_violenceDB.png
 
 
 <h3> Python Flask Api</h3> <br> 
-   <p></p>
+   <p>With the database loaded, we connect MongoDB and import the data to active Api for visualization with Javascript</p>
+  
+<h3>Dashboard for Gun violence</h3> <br>
+   <p>The dashboard contains pie charts for gun violence vs.party affiliation, bar chart for the total death count of each states and line chart representing three different kinds of gun violence. With a dropdown to see the data from year to year</p>
+   <p>Pie charts: charts are created using Javascript chart.js library base on the gun ownership by states data and gun death by states. Which shows the total counts for guns and death in blue vs. red states.</p> <br>
+   <p>Bar chart and line chart: The bar chart and line chart are made by chart.js as well. The data is the combined dataset that contains the information per year and state. these two charts will show new data base on the dropdown selections</p><br>
+   Screen Shot 2022-10-06 at 2.34.25 AM.png
+   Bar.png
+   Screen Shot 2022-10-06 at 10.19.35 AM.png
+
+
+
 
