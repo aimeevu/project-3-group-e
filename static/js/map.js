@@ -85,9 +85,9 @@ var blueTeam = [];
      var markerColor;
   
     if ((station.State == "Arizona") || (station.State == "California") || (station.State == "Colorado") || (station.State == "Connecticut") || (station.State == "Delaware") || (station.State == "Georgia") || (station.State == "Hawaii") || (station.State == "Illinois")|| (station.State == "Maine")|| (station.State == "Maryland") || (station.State == "Massachusetts") || (station.State == "Michigan") || (station.State == "Minnesota") || (station.State == "Nevada") || (station.State == "New Hampshire") || (station.State == "New Jersey") || (station.State == "New Mexico") || (station.State == "New York") || (station.State == "Oregon") || (station.State == "Pennsylvania") || (station.State == "Rhode Island") || (station.State == "Vermont") || (station.State == "Virginia") || (station.State == "Washington") || (station.State == "Wisconsin"))
-      markerColor = "blue";
+      markerColor = "red";
     else
-      markerColor = "red"; 
+      markerColor = "blue"; 
     
       var gunMarker = L.circle([station.coordinate[0], station.coordinate[1]],{
         fillOpacity: .30,
